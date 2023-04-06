@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-image: url(/img/principal.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#navCont{
+    position: relative;
+    background: rgba(117, 129, 115, 0.43);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 11vh;
+    align-items: center;    
+}
+
+#navCont img{
+    height: 8vh;
+    margin-left: 2%;
+}
+
+.navTex{
+    display: flex;    
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap:200px;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+    right: 50%;
+    font-weight: 100;
+    padding-top: 10px;
+
+ /* HOVER INSTRUÇÕES */ 
+
+--c: #ffffff; /* cor */
+--b: .06em;    /* tamanho da borda */
+--d: 5px;    /* profundidade do cubo */
+  border-radius: 5px;
+  height: 5vh;
+  --_s: calc(var(--d) + var(--b));
+  
+  color: var(--c);
+  border: solid #0000;
+  border-width: var(--b) var(--b) var(--_s) var(--_s);
+  background:
+    conic-gradient(at left var(--d)  bottom var(--d),
+      #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+    conic-gradient(at left var(--_s) bottom var(--_s),
+      #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+  transform: translate(calc(var(--d)/-1),var(--d));
+  clip-path: 
+    polygon(
+     var(--d) 0%, 
+     var(--d) 0%, 
+     100% 0%, 
+     100% calc(100% - var(--d)),
+     100% calc(100% - var(--d)),
+     var(--d) calc(100% - var(--d))
+    );
+  transition: 0.8s;
+}
+
+a:hover {
+    transform: translate(0,0);
+    --c: #48ff76; /* cor */
+    clip-path: 
+      polygon(
+       0% var(--d), 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)), 
+       calc(100% - var(--d)) 100%, 
+       0% 100%)
+}
+
+#button1{
+width: 10vw;
+}
+
+#button2{
+    width: 11vw;
+}
+
+#button3{
+    width: 15vw;    
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.containerTES{
+    display: flex;
+    position: relative;
+    margin-top: 20vh;
+}
+.containerTES li{
+    font-size: 30px;
+    position: relative;
+    margin: auto;
+    color: #302525;
+    max-width: 500px;
+    display: inline-block;
+}
+
+.containerTES h1{
+    position: relative;
+    left: 3%;
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: 121px;
+    letter-spacing: 10px;
+    color: #C7D4C5;
+}
+
+.containerSubTxt{
+    display: flex;
+    margin-top: 3vh;
+}
+
+.containerSubTxt h3{
+    position: relative;
+    left: 3%;
+    font-size: 2rem;
+    font-weight: 550;
+    color: #FFFFFF;
+}
+
+.plus {
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    }
+
+.plus img{
+height: 7vh;
+position: relative;
+left: 3%;
+}
+
+.plus span{
+    position: relative;
+    left: 3.8%;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: white;
+}

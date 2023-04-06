@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+@media (min-width: 500px) {
+    .col-sm-6 {
+      width: 50%;
+    }
+  }
+  html, body {
+    height: 100%;
+    min-height: 18em;
+  }
+
+  .container{
+    display: flex;
+    height: 100vh;
+  }
+  
+  .dir-side {
+    background-image: url(/img/peixes.jpg);
+  }
+
+  video {
+    height: 100%;
+    margin-bottom: 50px;
+  }
+  
+  /* Hide Play button + controls on iOS */
+  video::-webkit-media-controls {
+      display:none !important;
+  }
+  
+  .esq-side {
+    width: 70%;
+  }
+  
+  .divisor {
+    padding-top: 1em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50%;
+    min-height: 9em;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight:300;
+  }
+
+  @media(min-width: 500px) {
+    .divisor {
+      padding-top: 0em;
+      height: 100vh;
+    }
+  }
+  
+  .divisor > div {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+  }
+
+  .divisor > div .text-content {
+    line-height: 1.6em;
+    margin-bottom: 1em;
+  }
+
+ 
+  .divisor > div img {
+    height: 1.3em;
+  }
+
+  @media (max-width: 500px) {
+    .divisor > div img {
+      display:none;
+    }
+  }
+
+  .email input{
+    margin-top: 2em;
+    margin-bottom: 0em;
+    width: 30vw;
+    height: 3em;
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+
+  .divisor button, .divisor a.button {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight:300;
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 30vw;
+    padding: 0.7em;
+    font-size: 0.5em;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+      cursor: pointer;
+  }
+  .divisor button:hover, .divisor a.button:hover {
+    text-decoration: none;
+    background-color: rgb(0, 255, 98);
+    border-color: rgb(3, 237, 253);
+      cursor: pointer;
+
+  }
+  .esq-side.divisor button:hover, .divisor a.button:hover {
+    color: rgb(255, 255, 255);
+  }
+  .dir-side.divisor button:hover, .divisor a.button:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  @media (max-width: 925px) {
+    #divisor-or {
+      top:15%;
+    }
+  }
+  #divisor-or > div img {
+    height: 2.5em;
+  }
+  @media (max-width: 500px) {
+    #divisor-or {
+      position: absolute;
+      top: 50px;
+    }
+    #divisor-or > div img {
+      height:2em;
+    }
+  }
+  @media(min-width: 500px) {
+    #divisor-or {
+      font-size: 3em;
+    }
+  }
+
+  .back{
+    text-decoration: none;
+    position: relative;
+    right: 6.7em;
+    margin-top: 1em;
+    font-weight: 100;
+    font-size: 1.4rem;
+    }
+
+  .bold {
+      font-weight: 100;
+      font-size: 1.4rem;
+  }
+
+  .big {
+    color: rgb(1, 71, 1);
+    font-size: 3rem;
+      font-weight:800;
+  }
+
+  .container span{
+    left: 150px;
+    position: relative;
+  }
